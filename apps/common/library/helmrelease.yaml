@@ -13,3 +13,6 @@ spec:
         name: flux-system
         namespace: flux-system
       interval: 1m
+  valuesFrom:
+    - kind: ConfigMap
+      name: library-helm-values
