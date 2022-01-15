@@ -1,11 +1,11 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
-  name: test
+  name: library
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./apps/test
+  path: ./apps/dev/library
   prune: true
   sourceRef:
     kind: GitRepository
