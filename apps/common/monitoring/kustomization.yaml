@@ -1,2 +1,5 @@
 resources:
   - namespace.yaml
+  - helmrelease.yaml
+  - prometheus.helmrepository.yaml
+

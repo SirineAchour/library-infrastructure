@@ -1,2 +1,11 @@
+namespace: monitoring
 bases:
   - ../../common/monitoring
+
+configMapGenerator:
+  - name: prometheus-helm-values
+    files:
+      - values.yaml=prometheus-dev-values.yaml
+
+generatorOptions:
+  disableNameSuffixHash: true
