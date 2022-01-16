@@ -2,4 +2,6 @@ resources:
   - namespace.yaml
   - helmrelease.yaml
   - prometheus.helmrepository.yaml
+  - grafana.helmrepository.yaml
+  - grafana.helmrelease.yaml
 

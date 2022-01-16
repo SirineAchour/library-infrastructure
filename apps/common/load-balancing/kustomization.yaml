@@ -1,0 +1,5 @@
+resources:
+  - namespace.yaml
+  - helmrelease.yaml
+  - metallb.helmrepository.yaml
+

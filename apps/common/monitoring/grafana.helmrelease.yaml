@@ -1,0 +1,19 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: grafana
+  namespace: monitoring
+spec:
+  interval: 1m
+  chart:
+    spec:
+      chart: grafana
+      version: 8.3.4
+      sourceRef:
+        kind: HelmRepository
+        name: grafana
+        namespace: monitoring
+      interval: 1m
+  valuesFrom:
+    - kind: ConfigMap
+      name: grafana-helm-values

@@ -5,10 +5,10 @@ bases:
 configMapGenerator:
   - name: prometheus-helm-values
     files:
-      - values.yaml=prometheus-dev-values.yaml
+      - values.yaml=prometheus-prod-values.yaml
   - name: grafana-helm-values
     files:
-      - values.yaml=grafana-dev-values.yaml
+      - values.yaml=grafana-prod-values.yaml
 
 generatorOptions:
   disableNameSuffixHash: true
