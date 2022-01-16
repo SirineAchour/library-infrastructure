@@ -1,0 +1,10 @@
+namespace: istio-ingress
+bases:
+  - ../../common/istio-ingress
+configMapGenerator:
+  - name: istio-ingress-helm-values
+    files:
+      - values.yaml=prod-values.yaml
+
+generatorOptions:
+  disableNameSuffixHash: true
