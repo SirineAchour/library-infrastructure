@@ -4,26 +4,11 @@ ingress:
   className: nginx
   annotations:
     kubernetes.io/ingress.class: nginx
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
     # kubernetes.io/tls-acme: "true"
   hosts:
     - host: my-library.io
-      paths:
-        - path: /
-          pathType: ImplementationSpecific
-  rules:
-    - host:
-        http:
-            paths:
-            - backend:
-                service:
-                  name: library
-                  port:
-                    number: 8000
-              path: /
-              pathType: Prefix
 
-  
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
