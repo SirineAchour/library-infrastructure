@@ -1,1 +1,22 @@
-replicaCount: 1
+replicaCount: 3
+ingress:
+  enabled: true
+  className: nginx
+  annotations:
+    # kubernetes.io/tls-acme: "true"
+  hosts:
+    - host: dev.my-library.io
+      paths:
+        - path: /
+          pathType: Prefix
+
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
+
+image:
+  repository: ghcr.io/farahka/library
+  pullPolicy: Always
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "latest"

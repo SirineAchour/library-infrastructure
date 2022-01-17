@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./apps/dev/istio-system
+  path: ./apps/prod/istio-system
   prune: true
   sourceRef:
     kind: GitRepository
