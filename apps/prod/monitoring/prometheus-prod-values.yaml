@@ -109,12 +109,12 @@ alertmanager:
 
     # For Kubernetes >= 1.18 you should specify the ingress-controller via the field ingressClassName
     # See https://kubernetes.io/blog/2020/04/02/improvements-to-the-ingress-api-in-kubernetes-1.18/#specifying-the-class-of-an-ingress
-    ingressClassName: isio
+    ingressClassName: istio
 
     ## alertmanager Ingress annotations
     ##
     annotations:
-      kubernetes.io/ingress.class: isio
+      kubernetes.io/ingress.class: istio
     #   kubernetes.io/tls-acme: 'true'
 
     ## alertmanager Ingress additional labels

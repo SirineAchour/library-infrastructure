@@ -1,9 +1,9 @@
 replicaCount: 3
 ingress:
   enabled: true
-  className: isio
+  className: istio
   annotations:
-    kubernetes.io/ingress.class: isio
+    kubernetes.io/ingress.class: istio
     # kubernetes.io/tls-acme: "true"
   hosts:
     - host: my-library.io
