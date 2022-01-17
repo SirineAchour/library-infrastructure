@@ -1,0 +1,4 @@
+resources:
+  - ingress-nginx.yaml
+patches:
+- ./patch-namespace.yaml
