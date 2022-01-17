@@ -48,8 +48,8 @@ service:
     port: 443
     protocol: TCP
     targetPort: 443
-  annotations: 
-    service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+  annotations: {}
+  # service.beta.kubernetes.io/azure-load-balancer-internal: "true"
   loadBalancerIP: ""
   loadBalancerSourceRanges: []
   externalTrafficPolicy: ""
