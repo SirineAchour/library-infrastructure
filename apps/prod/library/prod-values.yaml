@@ -1,7 +1,7 @@
 replicaCount: 3
 ingress:
   enabled: true
-  className: istio
+  className: nginx
   annotations:
     # kubernetes.io/tls-acme: "true"
   hosts:
