@@ -7,10 +7,13 @@ spec:
   interval: 1m
   chart:
     spec:
-      chart: kiali-operator
+      chart: kiali-server
       version: 1.44.0
       sourceRef:
         kind: HelmRepository
         name: kiali
         namespace: istio-system
       interval: 1m
+  valuesFrom:
+    - kind: ConfigMap
+      name: kiali-helm-values

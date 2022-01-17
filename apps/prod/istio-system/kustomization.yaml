@@ -1,3 +1,11 @@
 namespace: istio-system
 bases:
   - ../../common/istio-system
+
+configMapGenerator:
+  - name: kiali-helm-values
+    files:
+      - values.yaml=kiali-prod-values.yaml
+
+generatorOptions:
+  disableNameSuffixHash: true
