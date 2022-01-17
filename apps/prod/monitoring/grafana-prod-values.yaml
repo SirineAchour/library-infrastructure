@@ -187,7 +187,6 @@ ingress:
   ingressClassName: istio
   # Values can be templated
   annotations:
-    kubernetes.io/ingress.class: istio
     # kubernetes.io/tls-acme: "true"
   labels: {}
   path: /
