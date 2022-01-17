@@ -9,16 +9,7 @@ ingress:
       paths:
         - path: /
           pathType: ImplementationSpecific
-  rules:
-  - http:
-      paths:
-      - path: /
-        pathType: ImplementationSpecific
-        backend:
-          service:
-            name: library
-            port:
-              number: 8000
+
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
