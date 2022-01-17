@@ -3,3 +3,5 @@ resources:
   - base.helmrelease.yaml
   - istiod.helmrelease.yaml
   - helmrepository.yaml
+  - kiali.helmrepository.yaml
+  - kiali.helmrelease.yaml
