@@ -8,7 +8,7 @@ ingress:
   hosts:
     - host: my-library.io
       paths:
-        - path: /
+        - path: /lib
           pathType: ImplementationSpecific
   tls: []
   #  - secretName: chart-example-tls
