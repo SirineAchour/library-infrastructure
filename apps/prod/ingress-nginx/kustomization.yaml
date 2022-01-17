@@ -1,0 +1,4 @@
+namespace: ingress-nginx
+bases:
+  - ../../common/ingress-nginx
+  
