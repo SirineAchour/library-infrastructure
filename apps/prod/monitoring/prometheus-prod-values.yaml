@@ -624,8 +624,9 @@ server:
   # useExistingClusterRoleName: nameofclusterrole
 
   ## namespaces to monitor (instead of monitoring all - clusterwide). Needed if you want to run without Cluster-admin privileges.
-  # namespaces:
-  #   - yournamespace
+  namespaces:
+    - library
+    - istio-system
 
   name: server
 
