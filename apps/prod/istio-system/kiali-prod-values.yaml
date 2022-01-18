@@ -98,7 +98,7 @@ login_token:
 
 server:
   port: 20001
-  metrics_enabled: true
+  metrics_enabled: false
   metrics_port: 9090
   web_root: ""
   web_fqdn: kiali.my-library.io
